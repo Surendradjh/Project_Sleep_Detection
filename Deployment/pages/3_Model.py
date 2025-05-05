@@ -65,7 +65,7 @@ try:
 
     # Plot
     fig, ax = plt.subplots(figsize=(10, 5))
-    sns.barplot(x=b['night'], y=b['sleep_hours'], palette="Blues", ax=ax)
+    sns.barplot(x=b['night'], y=b['sleeping_hours'], palette="Blues", ax=ax)
     ax.set_xlabel("Night")
     ax.set_ylabel("Sleep Hours")
     ax.set_title("Sleep Hours per Night")
