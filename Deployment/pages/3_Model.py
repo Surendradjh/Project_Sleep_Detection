@@ -58,7 +58,7 @@ st.markdown("### 📊 Random Individual's Sleep Pattern")
 try:
     sleep_patterns = pd.read_csv("Sleep_patterns.csv")
     s_id = st.selectbox("Select user:",np.array(sleep_patterns['series_id'].unique()))
-    b = sleep_patterns.loc[sleep_patterns['series_id'] == s_id, ["night", 'sleep_hours']]
+    b = sleep_patterns.loc[sleep_patterns['series_id'] == s_id, ["night", 'sleeping_hours']]
     nights=list(range(1,len(b['night'])+1))
     b['night']=nights
     st.markdown(f"##### 🧬 Sleep Data for ID: {s_id}")
